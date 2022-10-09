@@ -23,20 +23,19 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  flex-wrap: wrap;
 }
 
 .logo {
   width: 30%;
 }
 .barraDeBusqueda {
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 6px;
+  margin: auto;
 }
 
 .compra-cuotas {
   text-align: center;
+  margin: auto;
 }
 
 .burger-menu {
@@ -119,6 +118,7 @@ article img {
 .article-bottom {
   position: relative;
   padding: 15px 0px 0px;
+  border-top: solid 1px rgb(192, 186, 186);
 }
 
 .article-bottom i {
@@ -192,6 +192,16 @@ footer p {
 
 .login-box {
   padding: 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-box h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .login-box button {
@@ -212,6 +222,48 @@ footer p {
   justify-content: space-between;
   align-items: center;
   height: 150px;
+}
+
+.register-form {
+  padding-left: 10px;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.register-form h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.register-form button {
+  padding: 2px 5px 2px;
+  border-radius: 5px;
+  transition: all 450ms;
+}
+
+.register-form button:hover {
+  background-color: #0022aa;
+  color: #ebebeb;
+  border-color: #0022aa;
+}
+
+.reset-button {
+  background-color: #f53a3a;
+  color: #ebebeb;
+  border-color: #f53a3a;
+}
+
+label {
+  font-size: 17px;
+}
+
+.label-categorie {
+  font-size: 12px;
 }
 
 @media (min-width: 361px) {
@@ -272,10 +324,13 @@ footer p {
 }
 
 @media (min-width: 769px) {
-
-  body{
+  body {
     margin-bottom: 192px;
   }
+  .top-bar {
+    flex-wrap: nowrap;
+  }
+
   .top-bar,
   .navegador {
     max-width: 1200px;
@@ -285,12 +340,12 @@ footer p {
     font-size: 17px;
   }
 
-.navegador a:hover {
-  text-decoration: underline;
-}
+  .navegador a:hover {
+    text-decoration: underline;
+  }
 
   .compra-cuotas {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   article {
@@ -344,4 +399,3 @@ footer p {
     padding: 100px 0px 100px;
   }
 }
-
