@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  min-width: 99%;
+}
+
+body {
+  background-color: #eac926;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  width: 100vw;
+  margin-bottom: 380px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.logo {
+  width: 30%;
+}
+.barraDeBusqueda {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 6px;
+}
+
+.compra-cuotas {
+  text-align: center;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 5px 0px 5px;
+}
+.burger-menu button {
+  background-color: #1259c3;
+  border-radius: 3px;
+  border-width: 0px;
+  color: white;
+  height: 30px;
+  width: 30px;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navegador {
+  display: none;
+}
+
+.navegador ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegador a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 10px;
+}
+.banner {
+  width: 100%;
+}
+
+main {
+  margin: auto;
+  width: 100vw;
+  background-color: #ebebeb;
+  padding-bottom: 5px;
+}
+
+h4 {
+  font-size: 20px;
+  padding: 10px;
+}
+
+article {
+  margin: auto;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+  border-top: solid 1px #ebebeb;
+  border-left: 15px;
+  border-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+article img {
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+.article-bottom {
+  position: relative;
+  padding: 15px 0px 0px;
+}
+
+.article-bottom i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  color: #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.precio {
+  font-size: 18px;
+  width: 30%;
+}
+
+.descuento {
+  font-size: 14px;
+  width: 70%;
+  text-align: end;
+  opacity: 0.5;
+}
+
+.precio-dto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.descripcion {
+  font-size: 13px;
+  display: none;
+  height: 19px;
+}
+
+footer {
+  width: 100vw;
+  height: 380px;
+  text-align: center;
+  line-height: normal;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h4 {
+  font-size: large;
+  color: #666;
+  margin: 0%;
+}
+
+footer p {
+  color: #666;
+  margin-top: 0%;
+}
+.icono i {
+  color: #1259c3;
+}
+
+.login-box {
+  padding: 50px 0px 50px;
+}
+
+.login-box button {
+  padding: 2px 5px 2px;
+  border-radius: 5px;
+  transition: all 450ms;
+}
+
+.login-box button:hover {
+  background-color: #0022aa;
+  color: #ebebeb;
+  border-color: #0022aa;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+@media (min-width: 361px) {
+  .descripcion {
+    display: block;
+  }
+
+  article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  article img {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .article-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .navegador {
+    display: flex;
+    justify-content: space-between;
+    width: 98vw;
+  }
+
+  .navegador a {
+    font-size: 10px;
+  }
+
+  .navegador ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navegador li {
+    margin: 0 5px;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .navegador a {
+    font-size: 12px;
+  }
+
+  .descripcion {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+
+  body{
+    margin-bottom: 192px;
+  }
+  .top-bar,
+  .navegador {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .navegador a {
+    font-size: 17px;
+  }
+
+.navegador a:hover {
+  text-decoration: underline;
+}
+
+  .compra-cuotas {
+    font-size: 19px;
+  }
+
+  article {
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .descripcion {
+    opacity: 0;
+  }
+
+  .descripcion:hover {
+    opacity: 1;
+  }
+
+  article {
+    box-shadow: none;
+  }
+
+  article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  article i:hover {
+    animation: truck-rotate 1s;
+  }
+  @keyframes truck-rotate {
+    100% {
+      transform: rotate(-90deg);
+    }
+  }
+
+  footer {
+    height: 192px;
+  }
+
+  .footer-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icono i:hover {
+    color: #eac926;
+  }
+
+  .login-box {
+    padding: 100px 0px 100px;
+  }
+}
+
